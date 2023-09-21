@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Car</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">
+          <img src="LOGO 1.png" alt="Logo da Easy Car" />
+          Easy car
+        </a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="marcas.html">Catálogo de carros</a></li>
+          <li><a href="contato.html">Cadastro</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+                    
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <div class="slider">
+        <img id="slide-1" class="slide active" src="carro azul.jpg" alt="foto de vários carros">
+        <img id="slide-2" class="slide" src="suv.jpg" alt="foto de vários carros">
+        <img id="slide-3" class="slide" src="carro trilha.jpg" alt="foto de vários carros">
+        <img id="slide-4" class="slide" src="varios carros.jpg" alt="foto de vários carros">
+        <img id="slide-5" class="slide" src="renault2.jpg" alt="foto de vários carros">
+      </div>
+      <div class="slider-nav">
+        <button onclick="changeSlide(1)">1</button>
+        <button onclick="changeSlide(2)">2</button>
+        <button onclick="changeSlide(3)">3</button>
+        <button onclick="changeSlide(4)">4</button>
+        <button onclick="changeSlide(5)">5</button>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="slider-arrow slider-arrow-left" onclick="changeSlide(-1)">
+          &lt; <!-- Seta para a esquerda -->
+        </div>
+        <div class="slider-arrow slider-arrow-right" onclick="changeSlide(1)">
+          &gt; <!-- Seta para a direita -->
+        </div>
+        <div class="slider">
+          <!-- slides aqui -->
+        </div>
+      </div>
+
+      <h1 class="main-title"><a href="marcas.html">Compre seu carro aqui</a></h1>
+      
+      <a href="https://api.whatsapp.com/send?phone=NUMERO" target="_blank">
+        <div id="whatasapp">
+          <img
+            src="whatsapp2.png"
+            alt="Fale Whatsapp"
+          />
+        </div>
+        <a href="https://www.instagram.com/" target="_blank">
+        <div id="instagram">
+          <img
+            src="instagram2.png"
+            alt="Nosso instagram"
+          />
+        </div>
+        
+      </a>
+    </main>
+    <script src="mobile-navbar.js"></script>
+  </body>
+  <footer>
+    <p>&copy; 2023 Easy car. Todos os direitos reservados.</p>
+  </footer>
+</html>
